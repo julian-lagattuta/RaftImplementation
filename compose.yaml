@@ -1,0 +1,34 @@
+﻿services:
+  zero:
+    image: postgretest
+    build:
+      context: .
+      dockerfile: postgretest/Dockerfile
+    environment:
+      port: 8080
+      id: 0
+    networks:
+      - net
+  one:
+    image: postgretest
+    build:
+      context: .
+      dockerfile: postgretest/Dockerfile
+    environment:
+      port: 8080
+      id: 1
+    networks:
+      - net
+  two:
+    image: postgretest
+    build:
+      context: .
+      dockerfile: postgretest/Dockerfile
+    environment:
+      port: 8080
+      id: 2
+    networks:
+      - net
+networks:
+  net:
+    driver: bridge
