@@ -97,7 +97,7 @@ public class User
         {
 
             User user = new User(null);
-            user.LoadIps("""C:\Users\kidsf\RiderProjects\postgretest\postgretest\user-ips.txt""");
+            user.LoadIps("""C:\Users\kidsf\RiderProjects\RaftImplementation\RaftImplementation\user-ips.txt""");
             Console.WriteLine(user.server_ips);
 
             while (true)
